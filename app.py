@@ -22,7 +22,7 @@ def on_message(client, userdata, msg):
         
         if 'value' in payload and 'unit' in payload:
             sensors_data[sensor_name] = {
-                'value': payload['value'],
+                'value': round(float(payload['value']), 4),
                 'unit': payload['unit']
             }
             socketio.emit('sensor_update', {
