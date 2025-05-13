@@ -1,4 +1,4 @@
-# Gasway Web Client
+# Gasway Web
 
 ## Dependencies
 
